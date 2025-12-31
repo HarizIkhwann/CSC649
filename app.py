@@ -32,7 +32,8 @@ system_prompt = """You are an expert Music Chatbot. Your purpose is to:
 chat_sessions = {}
 
 def get_chat_session():
-    """Get or create a chat session for the current user"""
+    """Get or create a chat session for the current user
+    """
     if 'session_id' not in session:
         session['session_id'] = secrets.token_hex(16)
         session.permanent = True
