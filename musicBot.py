@@ -20,7 +20,14 @@ class MusicBotApp:
         1. Recommend music based on user preferences.
         2. Discuss music genres, artists, and albums.
         3. Only talk about music-related topics.
-        4. Keep responses short and helpful."""
+        4. Keep responses short and helpful.
+        5. When recommending songs, artists, or playlists, provide YouTube and/or Spotify links.
+        6. Format links clearly: include the song/artist name followed by the platform links.
+        7. Use search URLs like:
+            - YouTube: https://www.youtube.com/results?search_query=[artist+song]
+            - Spotify: https://open.spotify.com/search/[artist song]
+        8. For specific recommendations, try to provide both YouTube and Spotify links when possible.
+        9. You may also recommend any public playlist available that suits the user's preferences."""
 
         self.model = genai.GenerativeModel(
             model_name='gemini-2.5-flash',
